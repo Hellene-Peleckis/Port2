@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Poppins:ital,wght@1,200&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: #1d1f20
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 900px;
+    height: 600px;
+    background-color: #fff;
+    margin: 20px;
+}
+
+.container .imgbox {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    background-color: #db1515;
+}
+
+.container .imgbox img {
+    position: relative;
+    width: 700px;
+    transform: rotate(25deg);
+    left: -25px;
+    margin-top: 75px;
+}
+
+.container .imgbox:before {
+    content: 'Apple';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #4e4b4b;
+    opacity: 0.1;
+    font-size: 4em;
+    font-weight: 400;
+    letter-spacing: .1em;
+}
+
+.container .detalhes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 40px;
+}
+
+.container .detalhes h2 {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.5em;
+    line-height: 0.8em;
+    color: #191818;
+}
+
+.container .detalhes h2 span {
+    font-size: 0.6em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #999;
+}
+
+.container .detalhes .descricao p {
+    padding: 5px;
+    letter-spacing: .1rem;
+    font-size: 18px;
+    font-family: 'Open Sans Condensed' sans-serif;
+}
+
+
+/*.container .detalhes h3 {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.5em;
+    color: #2a2929;
+    float: left;
+}
+
+.container .detalhes button {
+    background: #006dbc;
+    color: #fff;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    padding: 15px 20px;
+    margin-top: 5px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 40px;
+    float: right;
+    cursor: pointer;
+}*/
+
+footer {
+    display: block;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+}
+
+@media (max-width: 980px) {
+    .container {
+        height: auto;
+    }
+    .container .imgbox {
+        padding: 40px;
+        box-sizing: border-box;
+        width: 100% !important;
+        height: auto;
+        text-align: center;
+        overflow: hidden;
+    }
+    .container .imgbox img {
+        left: initial;
+        max-width: 100%;
+        transform: rotate(0deg);
+    }
+    .detalhes {
+        width: 100% !important;
+        height: auto;
+        padding: 20px;
+    }
+    .container .detalhes p {
+        max-width: 100%;
+        margin-left: 0;
+    }
+}
